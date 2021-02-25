@@ -1,6 +1,6 @@
 :root{
     --red-color-netflix: #E50914;
-    --background-color: #141414;
+    --background-color: #000;
     --grey-color-links: #AAA;
     --white: #fff;
 }
@@ -13,6 +13,7 @@
 /* font-family: 'Roboto', sans-serif; */
 body{
     background: var(--background-color);
+    color: var(--white);
 }
 body, input, textarea, button {
     font: 400 1rem "Roboto", sans-serif; /* 16px == 1rem */
@@ -25,19 +26,77 @@ button{
 .container{
     display: flex;
     align-items: center;
+
 }
+
+.container > img{
+    margin: 0 2rem 0 3rem;
+}
+
 a{
     text-decoration: none;
     color: var(--grey-color-links);
     margin-right: 1rem;
+
+    font-size: 0.9rem;
 }
 a:hover{
     color: var(--white);
 }
-.logo{
-    color: var(--red-color-netflix);
-    font-size: 40px;
-    margin: auto 2rem;
+/* ---- header----*/
+
+.main-movie{
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%),url("../img/ODAAT.jpeg");
+
+    height: 85vh;
+    background-size: cover;
 }
 
-/* ---- header----*/ 
+.containerMain{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    
+}
+
+.containerMain p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+.containerMain h3{
+    margin-top: 15%;
+    font-size: 3rem;
+}
+
+.button{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    border-radius: 5px;
+
+    padding:1rem 2rem;
+    margin-right: 1rem;
+
+    transition: 0.2s ease all;
+}
+.button:hover{
+    background-color:white;
+    color:black;
+}
+.button i{
+    margin-right: 10px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+h2{
+    margin: 1rem;
+}
